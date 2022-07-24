@@ -31,7 +31,7 @@ class Planilha extends BaseController
 
         $data  = $planilha_object->getDadosCultura();
 
-        $nome_planilha = 'teste.xlsx';
+        $nome_planilha = 'tabela_colecao.xlsx';
 
         $spreadsheet = new Spreadsheet();
 
@@ -126,7 +126,6 @@ class Planilha extends BaseController
 
 		exit;
     }
-
     public function import(){
         $meioModel = new MeioModel();
         $especieModel = new EspecieModel();
